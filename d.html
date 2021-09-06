@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영역 - inline/block</title>
+</head>
+<body>
+    <header>
+    <span>
+        aaasdfawefawefasdfa<br>sdfawsdfawefasdfasdfa<br>wefasdfasdfa<br>sdfasdfasdfasdfasdfasdfasdf<br>asdfasasdfawefwerqewradjfwojfa;lwekjvoa <br>vd;lawkjfoawfj;ejfalk<br>wej
+    </span>
+    </header>
+    <nav>
+        메뉴바
+    </nav>
+    <section>
+    <article>
+    <br>
+    <h2>inline 예시<br> with와 height가 적용되지 않음. 적힌 내용의 길이만큼만 적용됨.</h2>
+    <span style="width:100px; border: 1px solid black;">
+        aaa
+    </span>
+    <span style="width:100px; border: 1px solid black;">
+        bbb
+    </span>
+    <span style="width:100px; border: 1px solid black;">
+        bbb
+    </span>
+    </article>
+    <article>
+    <h2>block 예시<br> width와 height가 적용이 되나 해당 라인에는 나 이외의 태그는 오지 못함</h2>
+    <div style="width:100px; border: 1px solid black;">
+        aaa
+    </div>
+    <div style="width:400px; border: 1px solid black;">
+        bbb
+    </div>
+    <div style="width:100px; border: 1px solid black;">
+        bbb
+    </div>
+    </article>
+    <article>
+    <h2>inline-block은 inline과 비슷하나 width와 height가 적용됨.</h2>
+    <h2>inline 형태 span을 inline-block으로 변경 예시</h2>
+    <span style="display:inline-block; width:200px; border: 1px solid black;">
+        aaa
+    </span>
+    <span style="display:inline-block; width:400px; border: 1px solid black;">
+        bbb
+    </span>
+    <span style="display:inline-block; width:100px; border: 1px solid black;">
+        bbb
+    </span>
+    </article>
+    </section>
+    <aside>
+        <h2>block 형태를 inline-block으로 변경 예시</h2>
+        <div style="display:inline-block; width:200px; border: 1px solid black;">
+            aaa
+        </div>
+        <div style="display:inline-block; width:400px; border: 1px solid black;">
+            bbb
+        </div>
+        <div style="display:inline-block; width:100px; border: 1px solid black;">
+            bbb
+        </div>
+        </aside>
+    <footer>
+        사업자번호, 사업자 주소, 연락처, 저작권, 링크...
+    </footer>
+</body>
+</html>
