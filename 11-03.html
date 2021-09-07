@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth child</title>
+    <style>
+         p:first-child, p:last-of-type {
+            color: red;
+        }
+        p:nth-last-child(4) {
+            color: blue;
+        }
+        span:first-of-type {
+            color: violet;
+        }
+        span:last-child {
+            color: yellow;
+        }
+        /* div:nth-last-child(1) {
+            color: turquoise;
+        } */
+        ul > :nth-child(1){
+            color: blue;
+        }
+        ul > :nth-child(2){
+            color: yellow;
+        }
+        ul > :nth-child(3){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>aaaaaaaaa</p>
+        <span>gggg</span>
+        <p>bbbbbb</p>
+        <span>hhh</span>
+        <p>ccccccc</p>
+        <span>jjj</span>
+    </div>
+    <div>
+        <ul>
+            <li>파랑색</li>
+            <li>바나나</li>
+            <li>사과</li>
+        </ul>
+    </div>
+</body>
+</html>

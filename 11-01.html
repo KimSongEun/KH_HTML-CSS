@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자 *</title>
+    <!-- 부트스트랩 CSS Start 코드 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+     rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <style>
+        * { 
+            background-color: thistle;
+            color : teal ;
+        }
+        p, span, p.fist, .cYellow.f20 {
+            color:blue;
+            font-size : 20px;
+        }
+        /* span {
+            color:blue;
+            font-size:20px;
+        } */
+        #intro {
+            color : brown;
+        }
+        #intro.cYellow {
+            color : wheat;
+        }
+        .cYellow.f20 {
+            font-weight: bold;
+        }
+        h1.first{
+            color : wheat;
+        }
+        p.first {
+            color : wheat;
+        }
+        .cYellow {
+            color : yellow;
+        }
+        .cBlue {
+            color : blue;
+        }
+        .f40 {
+            font-size : 40px;
+        }
+        .f20 {
+            font-size : 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>안녕하세요</h1>
+    <p id="intro" class = "cYellow f40">cccccccc</p>
+    <h1 class = "first cYellow">hhhhh111111</h1>
+    <p class = "first cYellow f40">aaaaaaaaaaa</p>
+    <p class = "first cYellow f20">ssssssssss</p>
+    <h1 class="second cBlue">hhhhh222222</h1>
+    <p class = "second cBlue f40">fffffffffffffff</p>
+    <p class = "second cBlue f20">gggggggggggggg</p>
+    <span>ddddddddddddddd</span>
+</body>
+</html>

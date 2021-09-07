@@ -1,0 +1,209 @@
+<!DOCTYPE html> 
+    <html> 
+    <head> 
+        <meta charset=”UTF-8”> 
+        <title>제목</title> 
+        <!-- -------------------------p26------------------------- -->
+        <style type="text/css"> 
+            table { border: 1px solid #ccc;} 
+            th { border: 1px solid #ccc; } 
+            tr { border: 1px solid #ccc; } 
+            td { border: 1px solid #ccc; } 
+        </style> 
+    </head> 
+    <body> 
+        -------------------------p13-------------------------<br>
+        <h1>Hello</h1> 
+        <div> 
+        <p>Welcom to HTML</p> 
+        <p>함께 HTML을 배워봅시다</p> 
+        <!—주석 : 출력되지 않습니다 
+        </div> 
+        -------------------------p15-------------------------<br>
+        <h1>제목1</h1> 
+        <h2>제목2</h2> 
+        <h3>제목3</h3> 
+        <h4>제목4</h4> 
+        <h5>제목5</h5> 
+        <h6>제목6</h6>
+        -------------------------p16-------------------------<br>
+        <p> 
+            가나다라마바사 
+            아자차카타파하 
+        </p>
+        --
+        <p>가나다라마바사<p>아자차카타파하</p>
+        --
+        <p>가나다라마바사<br>아자차카타파하</p>
+        -------------------------p17-------------------------<br>
+        <pre> 
+            가나다라마바사 
+            아자차카타파하 
+        </pre> 
+        -------------------------p18-------------------------<br>
+        <p><i>기울임</i><br> 
+            <b>굵게</b><br> 
+            아래<sub>첨자</sub><br> 
+            위<sup>첨자</sup><br> 
+            <ins>밑줄</ins><br> 
+            <strong>강조</strong><br> 
+            <small>작게</small><br> 
+        </p> 
+        -------------------------p19-------------------------<br>
+        <font size="1">글자 크기는 1~7까지 설정 가능</font><br> 
+        <font size="5">글자 크기는 1~7까지 설정 가능</font><br> 
+        <font size="7">글자 크기는 1~7까지 설정 가능</font><br>
+        <font face="엘리스 디지털배움체">설치되어 있는 폰트만 가능</font><br> 
+        <font face="THE봉숭아틴트">설치되어 있는 폰트만 가능</font><br>
+        <font color="red">빨강색</font><br> 
+        <font color="blue">파랑색</font><br> 
+        <font color="grey">회색</font><br>
+        -------------------------p21-------------------------<br>
+        <ul> 
+            <li>하나</li> 
+            <li>둘</li> 
+            <li>셋</li> 
+        </ul>
+        --
+        <ol> 
+            <li>하나</li> 
+            <li>둘</li> 
+            <li>셋</li> 
+        </ol>
+        --
+        <dl> 
+            <dt>HTML5</dt> 
+            <dd>HTML5는 HTML의 완전한 5번째 버전으로 월드 와이드 웹 의 핵심 마크업 언어이
+            다. </dd> 
+            <dt>CSS3</dt> 
+            <dd>CSS3는 기존의 CSS2가 갖지 못했던 화려하고 역동적인 면모를 추가하여 상자의 크기에 
+            따른 말줄임 표시, 투명한 배경, 그림자 효과, 둥근 모서리, 그라디언트, 도형의 회전과 비틀기, 
+            애니메이션 효과 등이 가능해진 것이다</dd> 
+        </dl> 
+        -------------------------p23-------------------------<br>
+        <a href="http://www.naver.com" target="_blank">네이버</a><br> 
+        <a href="http://www.google.com" target ="_self">구글</a><br> 
+        <a href="http://www.daum.net">다음</a><br>
+        -------------------------p24-------------------------<br>
+        <table> 
+            <tr> 
+            <td>이름</td> 
+            <td>주소</td> 
+            <td>전화번호</td> 
+            </tr> 
+            <tr> 
+            <td>수락산</td> 
+            <td>서울특별시 노원구 상계동</td> 
+            <td>02-950-3900</td> 
+            </tr> 
+            <tr> 
+            <td>도봉산</td> 
+            <td>서울특별시 도봉구 도봉동</td> 
+            <td>02-954-2566</td> 
+            </tr> 
+            <tr> 
+            <td>불암산</td> 
+            <td>서울특별시 노원구 상계동</td> 
+            <td>02-950-3395</td> 
+            </tr> 
+        </table> 
+        -------------------------p26-------------------------<br>
+        <table> 
+            <tr>
+                <td>1x1 셀</td> 
+                <td>1x2 셀</td>
+            </tr> 
+            <tr>
+                <td>2x1 셀</td> 
+            </tr> 
+        </table> 
+        -------------------------p27-------------------------<br>
+        <table> 
+            <tr> 
+            <td>1x1 셀</td> 
+            <td>1x2 셀</td> 
+            <td>1x3 셀</td> 
+            </tr> 
+            <tr> 
+            <td colspan="3">2x1 셀</td> 
+            </tr> 
+        </table> 
+        -------------------------p28-------------------------<br>
+        <table> 
+            <caption>한국의 산</caption> 
+            <thead> 
+            <tr> 
+            <th>이름</th> 
+            <th>주소</th> 
+            <th>전화번호</th> 
+            </tr> 
+            </thead> 
+            <tfoot> 
+            <tr> 
+            <td colspan="3"><small>등산과 함께 몸도 마음도 건강하게!</small></td> 
+            </tr> 
+            </tfoot> 
+            <tbody> 
+            <tr> 
+            <th scope="row">수락산</th> 
+            <td>서울특별시 노원구 상계동</td> 
+            <td>02-950-3900</td> 
+            </tr> 
+            <tr> 
+            <th scope="row">도봉산</th> 
+            <td>서울특별시 도봉구 도봉동</td> 
+            <td>02-954-2566</td> 
+            </tr> 
+            <tr> 
+            <th scope="row">불암산</th> 
+            <td>서울특별시 노원구 상계동</td> 
+            <td>02-950-3395</td> 
+            </tr> 
+            </tbody> 
+        </table>
+        -------------------------p30-------------------------<br>
+        <form action="#" name="info" method="get"> 
+            <fieldset style = "width:150"> 
+            <legend>개인 정보</legend> 
+            이름 : <input type = "text" name = "name"/><br><br>
+            나이 : <input type = "text" name = "age"/><br><br> 
+            </fieldset> 
+            <br> 
+            <fieldset style = "width:180; height:180"> 
+            <legend>특이 사항</legend> 
+            취미 : <input type = "text" name = "hobby"/><br><br> 
+            특기 : <input type = "text" name = "specialty"/> 
+            </fieldset> 
+        </form> 
+        -------------------------p32-------------------------<br>
+        <input type="text" placeholder="아이디 입력" id="userId" name="userId"><br> 
+        -------------------------p33-------------------------<br>
+        <input type="password" placeholder="비밀번호 입력" id="userPwd" name="userPwd"> <br>
+        --<br>
+        <label for="chkBox">체크</label> 
+        <input type="checkbox" id="chkBox" name="chkBox"> <br>
+        --<br>
+        <label>체크 
+            <input type="checkbox" id="chkBox" name="chkBox"> 
+        </label> <br>
+        -------------------------p34-------------------------<br>
+        <label>성별</label> 
+            <input type="radio" name="gender" value="m">남 
+            <input type="radio" name="gender" value="f">여 <br>
+        -------------------------p35-------------------------<br>
+        <input type="button" id="btnOk" value="확인"> 
+        <input type="submit" id="btnSubmit" value="제출"> 
+        <input type="reset" id="btnReset" value="취소"> <br>
+        --<br>
+        <button id="btnOk">확인</button> <br>
+        -------------------------p36-------------------------<br>  
+        <select name="month"> 
+            <option value="one">1 개월</option> 
+            <option value="two">2 개월</option> 
+            <option value="three">3 개월</option> 
+            <option value="four">4 개월</option> 
+        </select> <br>
+        -------------------------p37-------------------------<br>  
+        <textarea rows="3" cols="50" placeholder="긴글 입력" name="content"></textarea>
+    </body> 
+    </html>  

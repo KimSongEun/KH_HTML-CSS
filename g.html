@@ -1,21 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>체크박스와 라디오 - input 태그</title>
 </head>
+
 <body>
-    <form action = "#" method="get">
-    성별 : <input type = "radio" name = "g" value ="male"> 남
-            <input type = "radio" name = "g" value ="female"> 여
-    <br>
-    취미 : 
-    <input type = "checkbox" name = "h" value ="reading"> 독서
-    <input type = "checkbox" name = "h" value ="puzzle"> 퍼즐
-    <input type = "checkbox" name = "h" value ="baseball"> 야구
-     <br><input type ="submit">
+    <input list="dl1" name="dl1">
+
+    <form action="#" method="get">
+        성별 : <input type="radio" name="g" value="male" checked> 남
+        <input type="radio" name="g" value="female"> 여
+        <br>
+        취미 :
+        <input type="checkbox" name="h" value="reading" id="h1">
+        <label for="h1">독서</label>
+        <input type="checkbox" name="h" value="puzzle" id="h2">
+        <label for="h2">퍼즐</label>
+        <input type="checkbox" name="h" value="baseball" id="h3">
+        <label for="h3">야구</label>
+        <br>
+        <input type="color" name="color1"> <br>
+        <input type="date" name="date1"> <br>
+        <input type="time" name="t1"> <br>
+
+        <input type="number" name="n1"> <br>
+        <input type="range" name="n2" min="0" max="10" step="2" value="2"> <br>
+        <progress max="10" value="5">출력용</progress> <br>
+        <input type="search" name="n3"> <br>
+        <input type="tel" name="n4"> <br>
+        <label for="id11">라벨누르면 커서가 생김</label>
+        <input type="email" name="n5" id="id11"> <br>
+        <input type="url" name="n6" value="http://"> <br>
+
+        <label for="id10">셀렉트 라벨</label>
+        <select name="s" id="id10">
+            <optgroup label="색상">
+                <option value="s1"> 옵션1 </option>
+                <option value="s2" selected> 옵션2 </option>
+                <option value="s3"> 옵션3 </option>
+            </optgroup>
+            <optgroup label="사이즈">
+                <option value="s4"> 옵션4 </option>
+                <option value="s5"> 옵션5 </option>
+                <option value="s6"> 옵션6 </option>
+            </optgroup>
+        </select>
+        <br>
+        <input list="dl1" name="dl1">
+        <datalist id="dl1">
+            <option value="s7" label="옵션7">
+            <option value="s8">
+            <option value="s9"> 옵션9 </option>
+        </datalist>
+        <br>
+        <meter min="5" max="10" value="9">화면출력용</meter>
+        <meter value="1">화면출력용</meter>
+        <meter value="0.5">화면출력용</meter>
+        <meter value="0.78" low="0.2" high="0.7" optinum="0.5">화면출력용</meter>
+
+        <br><input type="submit" value="인풋타입쎱밑도 이름 바꾸기">
+        <button type="submit"><img src="images/화이팅.png" width="50" height="50"></button>
     </form>
 </body>
+
 </html>
