@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        /* body{
+             float:left; 부모태그에 적어서 자식태그에 적용되지 않음. 동위관계에만 적용됨.
+        } */
+        /* div{
+            float:left;
+        } */
+        span {
+            display: inline-block;
+            /* float:left; */
+            width:300px;
+            height:100px;
+        }
+        .c1 {
+            /* float:left; */
+            width : 250px;
+            height : 100px;
+            box-sizing: border-box;
+            border : chartreuse 5px solid;
+            /* line-height:90px; */
+            padding:0;
+            margin:0;
+            background-color: antiquewhite;
+            /* overflow: scroll;*/
+            overflow:hidden;
+            text-overflow: ellipsis; 
+            /* text-overflow : clip; */
+            white-space: nowrap;
+        }
+        .c2 {
+            float:left;
+            width : 250px;
+            height : 100px;
+            box-sizing: border-box;
+            border : chartreuse 5px solid;
+            /* line-height:90px; */
+            background-color: antiquewhite;
+            /* overflow: hidden; */
+            overflow: auto;
+        }
+        /* p{
+            overflow: hidden;
+            text-overflow: ellipsis;
+        } */
+        .c3 {
+            /* clear: both; */
+            float:right;
+            width : 250px;
+            height : 100px;
+            box-sizing: border-box;
+            border : chartreuse 5px solid;
+            /* line-height:90px; */
+            background-color: antiquewhite;
+        }
+        .c4 {
+            clear:both;
+            /*float:left;*/
+            /* float:none; */
+            width : 250px;
+            height : 100px;
+            box-sizing: border-box;
+            border : chartreuse 5px solid;
+            /* line-height:90px; */
+            background-color: antiquewhite;
+
+            position:relative;
+            top:50px;
+            left : 150px;
+        }
+        .c5 {
+            visibility: visible;
+            position :fixed;
+            top:50px;
+            left:100px;
+            width:50px;
+            height:30px;
+            border: red 5px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="c1">
+        1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div>
+        <span> 
+            0. span Lorem ipsum dolor sit amet,
+        </span>
+    </div>
+    <!-- <span> 넣지말기!! 정 넣고싶으면 div로 span 감싸기
+        0. span Lorem ipsum dolor sit amet,
+    </span> -->
+    <div>
+        <div class="c2">
+            2. Lorem ipsum dolor sit amet, 
+            <img src="./images/윙크.png" width="500"; height="300";>
+        </div>
+        <div class="c3">
+            3. Lorem ipsum dolor sit amet,
+        </div>
+    </div>
+    <div class="c4">
+        4. Lorem ipsum dolor sit amet,
+        <div class="c5">
+            5. Lorem ipsum dolor sit amet,
+        </div>
+    </div>
+
+</body>
+</html>
